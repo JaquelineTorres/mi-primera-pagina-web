@@ -1,0 +1,162 @@
+/* Importa el CSS general aquí */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(45, 62, 64, 0.8); /* Reducir la opacidad a 80% */
+    color: #E4F2E7;
+}
+
+header {
+    padding: 10px;
+    font-family: 'Lexend Peta', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    background-color: transparent; /* Sin fondo */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #E4F2E7;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #93BFB7;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #97A6A0;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #97A6A0;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #97A6A0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #93BFB7;
+    color: #E4F2E7;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #387373;
+}
+
+footer {
+    background-color: #2D3E40;
+    color: #E4F2E7;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    z-index: 1;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+    display: inline-block;
+    max-width: 100%;
+    opacity: 0.8; /* Bajar la opacidad a 80% */
+    border-radius: 10px; /* Redondear los bordes */
+}
+
+.background-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.title {
+    color: #E4F2E7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    z-index: 1;
+    animation: moveText 3s infinite alternate;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -70%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Estilos adicionales para las secciones */
+#acerca,
+#proyectos,
+#contacto {
+    display: none;
+}
+
+
+
+.hidden {
+    display: none;
+}
